@@ -21,7 +21,7 @@ print(model)
 model.cuda()
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(model.parameters(), lr=0.01)
-n_epoch = 3
+n_epoch = 100
 valid_loss_min = np.Inf
 
 for i in range(n_epoch):
